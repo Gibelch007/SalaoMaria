@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Paprika&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    --bg-color: #FFF;
+
+    --fonte-primaria: "Open Sans", sans-serif;
+    --fonte-secundaria: "Libre Baskerville", serif;
+    --fonte-especial: "Paprika", system-ui;
+}
+
+html, body {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    font-size: 1rem;
+    font-family: var(--fonte-padrao);
+}
+
+.fonteSecundaria {
+    font-family: var(--fonte-secundaria);
+}
+
+.fonteEspecial {
+    font-family: var(--fonte-especial);
+}

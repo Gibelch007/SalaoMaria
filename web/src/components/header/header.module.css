@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem;
+
+    & > .logo {
+        & > span {
+            text-decoration: underline;
+        }
+    }
+
+    & > nav {
+        & > ul {
+            display: flex;
+
+            & > .social_links {
+                display: flex;
+
+                & > a > img{
+                    width: 2rem;
+                }
+            }
+        }
+    }
+}
