@@ -26,6 +26,11 @@ html, body {
     font-family: var(--fonte-padrao);
 }
 
+img{
+    vertical-align: top;
+
+}
+
 .fonteSecundaria {
     font-family: var(--fonte-secundaria);
 }

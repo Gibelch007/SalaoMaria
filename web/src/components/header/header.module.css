@@ -3,23 +3,42 @@
     justify-content: space-between;
     padding: 1.25rem;
 
-    & > .logo {
-        & > span {
+
+
+    &>.logo {
+        &>span {
             text-decoration: underline;
+
         }
     }
 
-    & > nav {
-        & > ul {
+    &>nav {
+        &>ul {
             display: flex;
+            align-items: center; 
+            gap: 1.5625rem;
+            font-family: var(--fonte-secundaria);
 
-            & > .social_links {
+            &>.pink>a{
+                color: rgb(231, 86, 159);
+            }
+
+            &>li>a{
+                color: black;
+                
+            }
+            
+
+            &>.social_links {
                 display: flex;
+                gap: 1rem;
 
-                & > a > img{
+                &>a>img {
                     width: 2rem;
                 }
+
             }
+
         }
     }
 }

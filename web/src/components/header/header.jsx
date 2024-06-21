@@ -9,7 +9,7 @@ export function Header() {
             <nav>
                 <ul
                 >
-                    <li>
+                    <li className={styles.pink}>
                         <Link to="/">Início</Link>
                     </li>
                     <li>
