@@ -10,7 +10,7 @@ export function Header() {
                 <ul
                 >
                     <li className={styles.pink}>
-                        <Link to="/">Início</Link>
+                        <Link to="/">Home</Link>
                     </li>
                     <li>
                         <a href="#!">Serviços</a>

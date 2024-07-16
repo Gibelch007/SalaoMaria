@@ -1,0 +1,28 @@
+.footer{
+
+    text-align: center;
+    width: 100%;
+    color: black;
+    font: var(--fonte-especial) 3px; 
+    padding: 20px;
+
+  }
+  
+    
+  .footer__copyright{
+     
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .social_links {
+    display: flex;
+    gap: 1rem;
+
+    &>a>img {
+        width: 2rem;
+       font: var(--fonte-especial);
+    }
+  }
