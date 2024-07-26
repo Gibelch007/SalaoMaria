@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./header.module.css";
+import React from "react";
 
 export function Header() {
     return (
@@ -36,5 +37,7 @@ export function Header() {
                 </ul>
             </nav>
         </header>
+
+
     )
 }

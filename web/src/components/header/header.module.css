@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     padding: 1.25rem;
+    background-color: pink;
 
 
 
@@ -20,7 +21,7 @@
             font-family: var(--fonte-secundaria);
 
             &>.pink>a{
-                color: rgb(231, 86, 159);
+                color: rgb(145, 0, 72);
             }
 
             &>li>a{
