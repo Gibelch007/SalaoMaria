@@ -2,9 +2,57 @@ body{
     margin: auto;
     
 }
-img{
-    size: 12.5rem;
-    align-items: center;
-    justify-content: space-between;
+.banner{
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.grid{  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+
+    & > li{
+        background-color:  #ffad8d;
+    
+        height: 300px;
+
+        & > a{
+            height: inherit;
+            display: flex;
+            gap: 3.125rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        
+
+            & > span{
+                color: rgb(0, 0, 0);
+            }
+
+            & > span:first-child{
+                font-size: 2rem;
+            
+                &::before{
+                    content: '';
+                    display: block;
+                    width: 20%;
+                    height: .1875rem;
+                    background-color: rgb(0, 0, 0);
+                    margin: 0 auto 1rem auto;
+                }
+            }
+
+            & > span:last-child{
+                font-size: 1.25rem;
+            }
+        }
+
+        & img{
+            width: 100%;
+        }
+    }
+   
 }
 

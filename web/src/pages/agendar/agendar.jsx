@@ -1,20 +1,28 @@
-import {Header } from "../../components/header/header";
-import {Footer} from "../../components/footer/footer";
+import { Header } from "../../components/header/header";
+import { Footer } from "../../components/footer/footer";
+import styles from "../../pages/agendar/agendar.module.css";
 
-export function AgendeOnline (){
+export function AgendeOnline() {
     return (
         <>
             <Header />
 
-            <h1>About Page</h1>
-            <div>
+            <main>
+                <h1> Nossos Serviços</h1>
+                
+                <div className={styles.servicosContainer}>
+                    <div>
+                        <ul></ul>
+                    </div>
 
-      <button onClick={() => window.location.href = '/'}>Go to Home</button>
+                    <ul className={styles.servicos}>
 
-         </div>           
-          
-         <Footer/>
+                    </ul>
+                </div>
 
+            </main>
+
+            <Footer />
         </>
-    )   
+    )
 }

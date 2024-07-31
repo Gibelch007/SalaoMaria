@@ -26,6 +26,25 @@ html, body {
     font-family: var(--fonte-padrao);
 }
 
+#root{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.container{
+    width: 100%;
+    max-width: 75rem;
+    margin-inline: auto;
+}
+
 img{
     vertical-align: top;
 
@@ -40,16 +59,3 @@ img{
 }
 
 
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }

@@ -1,20 +1,22 @@
 .header {
-    display: flex;
-    justify-content: space-between;
     padding: 1.25rem;
     background-color: pink;
 
+    & > div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-
-    &>.logo {
+    & .logo {
         &>span {
             text-decoration: underline;
 
         }
     }
 
-    &>nav {
-        &>ul {
+    & nav {
+        & ul {
             display: flex;
             align-items: center; 
             gap: 1.5625rem;

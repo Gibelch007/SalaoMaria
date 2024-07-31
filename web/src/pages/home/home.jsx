@@ -1,29 +1,68 @@
 import { Header } from "../../components/header/header";
-import {Footer} from "../../components/footer/footer";
+import { Footer } from "../../components/footer/footer";
 import React from 'react';
-import styles from "../../pages/home/home.module.css"; 
-import { Link } from "react-router-dom";
+import styles from "../../pages/home/home.module.css";
+import { Link, useNavigate } from "react-router-dom";
 
-export function Home(){
+export function Home() {
     return (
         <>
-        <Header />
-            <div>
-            <h1> cuidando da sua beleza</h1>
-            <button onClick={() => window.location.href = '/Agendar'}></button>
-            <img src="../../img/2.png" alt=""/>
-            <img src="../../img/1.png" alt="" />
+            <Header />
 
-            </div>
-            <div className="container">
+            <main>
+                <div className="container">
+                    <img className={styles.banner} src="../../img/2.png" alt="" />
+                </div>
 
-            <h1>Ola Galerinha</h1>
-            </div>
-            <Footer/>
+                <div className="container">
+                    <ul className={styles.grid}>
+                        <li className="grid-button">
+                            <Link to="/agendeOnline">
+                                <span>Maquiagem</span>
+                                <span>agende agora</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <img src="../../img/01.jpg" alt="" />
+                        </li>
+                        <li className="grid-button">
+                            <Link to="/agendeOnline">
+                                <span>Sobrancelha</span>
+                                <span>Agende Agora</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <img src="../../img/11.jpg" alt="" />
+                        </li>
+
+                        <li>
+                            <img src="../../img/31.jpg" alt="" />
+                        </li>
+                        <li className="grid-button">
+                            <Link to="/agendeOnline">
+                                <span>Cílios</span>
+                                <span>agende agora</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <img src="../../img/21.jpg" alt="" />
+                        </li>
+                        <li className="grid-button">
+                            <Link to="/agendeOnline">
+                                <span>Unhas</span>
+                                <span>agende agora</span>
+                            </Link>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </main> 
+
+            <Footer />
         </>
 
 
-    )   
+    )
 
 
 
